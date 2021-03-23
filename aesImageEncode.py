@@ -77,7 +77,7 @@ def ecb_decipherAndSaveImage(k, ct, image, outputFileName):
 
 
 # ~~~~ CBC
-# ecb_en - encode in CBC mode
+# cbc_en - encode in CBC mode
 # Input:
 # k - key
 # iv - initialization vector
@@ -89,7 +89,7 @@ def cbc_en(k, iv, pt):
   ct = cipher.encrypt(pad(pt, AES.block_size))
   return ct
 
-# ecb_de - decode in CBC mode
+# cbc_de - decode in CBC mode
 # Input:
 # k - key
 # iv - initialization vector
